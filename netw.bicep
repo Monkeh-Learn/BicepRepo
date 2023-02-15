@@ -6,6 +6,7 @@ param location string = resourceGroup().location
 
 param vmName string = 'testVM'
 param adminUsername string = 'testyoub'
+@secure()
 param adminPassword string = '!2Bu$t3r400!2'
 
 
