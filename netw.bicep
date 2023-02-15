@@ -7,7 +7,7 @@ param location string = resourceGroup().location
 param vmName string = 'testVM'
 param adminUsername string = 'testyoub'
 @secure()
-param adminPassword string = '!2Bu$t3r400!2'
+param adminPassword string = 'P@ssword'
 
 
 // Create VNet and Subnet
@@ -30,8 +30,6 @@ resource vnet 'Microsoft.Network/virtualNetworks@2021-08-01' = {
     ]
   }
 }
-
-
 
 
 // Create NIC
